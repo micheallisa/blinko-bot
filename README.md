@@ -1,2 +1,3 @@
-# deez-nutz-bot
-  a bot for discord that says deez nutz when you say deez
+# Blinko Bot
+
+A discord bot that randomly replies to messages if they match the criteria.
