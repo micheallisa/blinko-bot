@@ -1,3 +1,3 @@
-# Blinko Bot
+# Hanna Bot
 
-A discord bot that randomly replies to messages if they match the criteria.
+General purpose discord bot for a server I'm on. Feel free to use the code for your own bots if you wish.
