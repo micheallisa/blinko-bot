@@ -134,5 +134,13 @@ async def on_message(message):
     elif '$birb' in message.content:
         reponse = random.choice(birb)
         await message.reply(reponse)
+@bot.event
+async  def on_message(message):
+    if message.author == bot.user:
+        return
+    if '$help' in message.content:
+        response = '$help: Prints this message \n $birb: Replies with a gif of a bird \n $dog: Replies with a gif of a dog \n $cat: Replies with a gif of a cat.'
+        await message.reply(response)
+
 
 bot.run(TOKEN)
