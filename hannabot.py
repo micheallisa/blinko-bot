@@ -24,11 +24,33 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
+
+    if message.channel == 'vent-tw':
+        return
+    elif message.channel == 'vent-2':
+        return
+    elif message.channel == 'vent-3':
+        return
+    elif message.channel == 'vent-4':
+        return
+    elif message.channel == 'vent-5':
+        return
+    elif message.channel == 'littles-venting-channel':
+        return
+    elif message.channel == 'happy-rants':
+        return
+    elif message.channel == 'unhappy-rants':
+        return
+    elif message.channel == 'important':
+        return
+    elif message.channel == 'announcements':
+        return
+
     grass = [
         'go touch grass',
         'touch grass',
     ]
-    if message.content == 'grass':
+    if 'grass' in message.content.lower():
         if random.randint(1, 10) == 1:
             response = random.choice(grass)
             await message.channel.send(response)
@@ -39,6 +61,28 @@ async def on_message(message):
 async def on_message(message):
     if message.author == bot.user:
         return
+
+    if message.channel == 'vent-tw':
+        return
+    elif message.channel == 'vent-2':
+        return
+    elif message.channel == 'vent-3':
+        return
+    elif message.channel == 'vent-4':
+        return
+    elif message.channel == 'vent-5':
+        return
+    elif message.channel == 'littles-venting-channel':
+        return
+    elif message.channel == 'happy-rants':
+        return
+    elif message.channel == 'unhappy-rants':
+        return
+    elif message.channel == 'important':
+        return
+    elif message.channel == 'announcements':
+        return
+
 
     deez = [
         'sugon deez nutz',
@@ -54,6 +98,27 @@ async def on_message(message):
 @bot.event
 async def on_message(message):
     if message.author == bot.user:
+        return
+
+    if message.channel == 'vent-tw':
+        return
+    elif message.channel == 'vent-2':
+        return
+    elif message.channel == 'vent-3':
+        return
+    elif message.channel == 'vent-4':
+        return
+    elif message.channel == 'vent-5':
+        return
+    elif message.channel == 'littles-venting-channel':
+        return
+    elif message.channel == 'happy-rants':
+        return
+    elif message.channel == 'unhappy-rants':
+        return
+    elif message.channel == 'important':
+        return
+    elif message.channel == 'announcements':
         return
 
     cringe = [
@@ -83,6 +148,27 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
+    if message.channel == 'vent-tw':
+        return
+    elif message.channel == 'vent-2':
+        return
+    elif message.channel == 'vent-3':
+        return
+    elif message.channel == 'vent-4':
+        return
+    elif message.channel == 'vent-5':
+        return
+    elif message.channel == 'littles-venting-channel':
+        return
+    elif message.channel == 'happy-rants':
+        return
+    elif message.channel == 'unhappy-rants':
+        return
+    elif message.channel == 'important':
+        return
+    elif message.channel == 'announcements':
+        return
+
     if 'masher' in message.content.lower():
         if random.randint(1, 200) == 69:
             response = 'https://imgur.com/a/eFCwJHz'
@@ -93,6 +179,7 @@ async def on_message(message):
 async def on_message(message):
     if message.author == bot.user:
         return
+
     dog = [
         'https://media4.giphy.com/media/bbshzgyFQDqPHXBo4c/giphy.gif?cid=ecf05e47e6xx23euvpu2pgj9c3z4agtrzq79av7b37wy1u5s&rid=giphy.gif&ct=g',
         'https://media2.giphy.com/media/QvBoMEcQ7DQXK/giphy.gif?cid=ecf05e47e6xx23euvpu2pgj9c3z4agtrzq79av7b37wy1u5s&rid=giphy.gif&ct=g',
@@ -142,5 +229,68 @@ async  def on_message(message):
         response = '$help: Prints this message \n $birb: Replies with a gif of a bird \n $dog: Replies with a gif of a dog \n $cat: Replies with a gif of a cat.'
         await message.reply(response)
 
+# Trolls an anti-communist user.
+@bot.event
+async  def on_message(message):
+    if message.content == bot.user:
+        return
+    if message.channel == 'vent-tw':
+        return
+    elif message.channel == 'vent-2':
+        return
+    elif message.channel == 'vent-3':
+        return
+    elif message.channel == 'vent-4':
+        return
+    elif message.channel == 'vent-5':
+        return
+    elif message.channel == 'littles-venting-channel':
+        return
+    elif message.channel == 'happy-rants':
+        return
+    elif message.channel == 'unhappy-rants':
+        return
+    elif message.channel == 'important':
+        return
+    elif message.channel == 'announcements':
+        return
+    if 'communism' in message.content.lower():
+        if random.randint(1, 5) == 3:
+            response = 'iPhone 100 billion dead Venezualea'
+            await message.reply(response)
+
+# Trolls an anti-capitlist user
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+
+    if message.channel == 'vent-tw':
+        return
+    elif message.channel == 'vent-2':
+        return
+    elif message.channel == 'vent-3':
+        return
+    elif message.channel == 'vent-4':
+        return
+    elif message.channel == 'vent-5':
+        return
+    elif message.channel == 'littles-venting-channel':
+        return
+    elif message.channel == 'happy-rants':
+        return
+    elif message.channel == 'unhappy-rants':
+        return
+    elif message.channel == 'important':
+        return
+    elif message.channel == 'announcements':
+        return
+    
+    if 'hate capitalism' in message.content.lower():
+        if random.randint(1, 5) == 2:
+            reponse = 'yet you exist'
+            await message.reply(reponse)
+
 
 bot.run(TOKEN)
+
